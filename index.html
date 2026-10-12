@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Cyrus John Revereza, a Computer Engineering student exploring web development, programming, and computer hardware.">
+  <title>Cyrus John Revereza | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Cyrus portfolio home">CJR<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-contact" href="#contact">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> COMPUTER ENGINEERING STUDENT</p>
+        <h1>Hi, I'm <span>Cyrus John</span><br>Revereza.</h1>
+        <p class="hero-description">I'm exploring programming, web development, and computer hardware—one project and one new skill at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore My Work <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#about">About Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Cyrusqt08" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <span aria-hidden="true">·</span>
+          <a href="#contact">Get in touch ↗</a>
+        </div>
+      </div>
+      <div class="code-card" aria-label="Developer profile preview">
+        <div class="code-card-top">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <span>about-me.js</span>
+        </div>
+        <div class="code-lines">
+          <p><span class="syntax-purple">const</span> developer = {</p>
+          <p class="indent">name: <span class="syntax-green">"Cyrus John Revereza"</span>,</p>
+          <p class="indent">age: <span class="syntax-orange">21</span>,</p>
+          <p class="indent">course: <span class="syntax-green">"Computer Engineering"</span>,</p>
+          <p class="indent">interests: [</p>
+          <p class="indent-2"><span class="syntax-green">"Web Development"</span>,</p>
+          <p class="indent-2"><span class="syntax-green">"Programming"</span>,</p>
+          <p class="indent-2"><span class="syntax-green">"Computer Hardware"</span></p>
+          <p class="indent">]</p>
+          <p>};</p>
+          <p class="syntax-comment">// Learning, building, improving.</p>
+        </div>
+        <div class="code-card-bottom"><span class="status-dot"></span> Always learning something new</div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="about">
+      <p class="section-label">01 / ABOUT ME</p>
+      <h2>A little about <span>myself.</span></h2>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I'm Cyrus John Revereza, 21 years old, and a Computer Engineering student at ICCT Colleges. I'm interested in technology and how software and computer hardware work together.</p>
+          <p>I'm currently exploring JavaScript, HTML, CSS, C++, and computer hardware. My goal is to strengthen my technical skills, create useful projects, and keep learning through hands-on practice.</p>
+        </div>
+        <div class="info-card">
+          <p><span>FULL NAME</span><strong>Cyrus John Revereza</strong></p>
+          <p><span>AGE</span><strong>21 years old</strong></p>
+          <p><span>COURSE</span><strong>Computer Engineering</strong></p>
+          <p><span>COLLEGE</span><strong>ICCT Colleges</strong></p>
+          <p><span>INTERESTS</span><strong>Programming &amp; Hardware</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block section-alt" id="education">
+      <p class="section-label">02 / EDUCATION</p>
+      <h2>My educational <span>background.</span></h2>
+      <div class="education-grid">
+        <article class="education-card">
+          <span class="card-number">01</span>
+          <p class="card-kicker">ELEMENTARY</p>
+          <h3>Peñafrancia Elementary School</h3>
+        </article>
+        <article class="education-card">
+          <span class="card-number">02</span>
+          <p class="card-kicker">HIGH SCHOOL</p>
+          <h3>Mayamot National High School</h3>
+        </article>
+        <article class="education-card">
+          <span class="card-number">03</span>
+          <p class="card-kicker">COLLEGE</p>
+          <h3>ICCT Colleges</h3>
+          <p class="card-detail">Computer Engineering</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="skills">
+      <p class="section-label">03 / MY SKILLS</p>
+      <h2>Things I'm <span>learning.</span></h2>
+      <p class="section-intro">Technologies and technical areas I'm currently exploring and improving.</p>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-symbol html-symbol">5</span><h3>HTML</h3><p>Building the structure and content of web pages.</p><span class="skill-tag">Currently learning</span></article>
+        <article class="skill-card"><span class="skill-symbol css-symbol">#</span><h3>CSS</h3><p>Styling websites with layouts, colors, and responsive design.</p><span class="skill-tag">Currently learning</span></article>
+        <article class="skill-card"><span class="skill-symbol js-symbol">JS</span><h3>JavaScript</h3><p>Adding interactivity and behavior to websites.</p><span class="skill-tag">Currently learning</span></article>
+        <article class="skill-card"><span class="skill-symbol cpp-symbol">C++</span><h3>C++</h3><p>Practicing programming fundamentals and problem-solving.</p><span class="skill-tag">Currently learning</span></article>
+        <article class="skill-card"><span class="skill-symbol hardware-symbol">⌘</span><h3>Computer Hardware</h3><p>Exploring PC components, compatibility, and troubleshooting.</p><span class="skill-tag">Technical interest</span></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block section-alt" id="projects">
+      <p class="section-label">04 / MY PROJECTS</p>
+      <h2>Things I'm <span>building.</span></h2>
+      <p class="section-intro">A selection of my learning interests and personal work.</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-art art-purple"><span class="project-art-symbol">&lt;/&gt;</span><span class="project-art-label">WEB DEVELOPMENT</span></div>
+          <div class="project-body"><p class="project-kicker">PERSONAL PROJECT</p><h3>Personal Portfolio</h3><p>A website introducing me, my education, interests, and developing skills.</p><div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="https://github.com/Cyrusqt08/My-Portfolio2" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-art art-blue"><span class="project-art-symbol">C++</span><span class="project-art-label">PROGRAMMING</span></div>
+          <div class="project-body"><p class="project-kicker">PRACTICE</p><h3>C++ Exercises</h3><p>Practicing programming logic, core concepts, and problem-solving skills.</p><div class="tech-list"><span>C++</span><span>Logic</span></div><a href="https://github.com/Cyrusqt08" target="_blank" rel="noopener noreferrer">Visit GitHub ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-art art-pink"><span class="project-art-symbol">⌘</span><span class="project-art-label">COMPUTER ENGINEERING</span></div>
+          <div class="project-body"><p class="project-kicker">TECHNICAL INTEREST</p><h3>Hardware Exploration</h3><p>Learning about computer components, hardware compatibility, and basic troubleshooting.</p><div class="tech-list"><span>PC Hardware</span><span>Research</span></div><a href="#contact">Connect with me ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block contact-section" id="contact">
+      <p class="section-label">05 / CONTACT</p>
+      <h2>Let's get in <span>touch.</span></h2>
+      <p class="section-intro contact-intro">Feel free to contact me or connect with me online.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="tel:09063768069">
+          <span class="contact-icon" aria-hidden="true">☎</span><span class="contact-label">PHONE NUMBER</span><strong>09063768069</strong><span class="contact-link">Call me ↗</span>
+        </a>
+        <a class="contact-card" href="https://github.com/Cyrusqt08" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon github-icon" aria-hidden="true">⌘</span><span class="contact-label">GITHUB ACCOUNT</span><strong>Cyrusqt08</strong><span class="contact-link">Visit GitHub ↗</span>
+        </a>
+        <a class="contact-card" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon facebook-icon" aria-hidden="true">f</span><span class="contact-label">FACEBOOK ACCOUNT</span><strong>Facebook</strong><span class="contact-link">Visit Facebook ↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo" href="#home">CJR<span>.</span></a>
+    <p>© <span id="year"></span> Cyrus John Revereza</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
